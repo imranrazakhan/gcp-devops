@@ -1,6 +1,6 @@
 locals {
   env              = "dev"
-  project          = "test-gke-admin"
+  project          = "test-gke-infra"
   region           = "europe-west1"
 }
 
