@@ -1,7 +1,6 @@
 locals {
   env              = "dev"
-  project          = "citizix"
-  credentials_path = "./gcp-credentials.json"
+  project          = "dev-gke-admin"
   region           = "europe-west1"
 }
 
@@ -15,8 +14,6 @@ terraform {
 }
 
 provider "google" {
-  credentials = file(local.credentials_path)
-
-  project = "citizix-prj"
+  project = "dev-gke-admin"
   region  = local.region
 }
