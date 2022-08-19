@@ -1,5 +1,5 @@
 locals {
-  env              = "dev"
+  env              = "qa"
   project          = "test-gke-infra"
   region           = "europe-west1"
 }
