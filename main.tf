@@ -14,6 +14,6 @@ terraform {
 }
 
 provider "google" {
-  project = "dev-gke-admin"
+  project = "test-gke-infra"
   region  = local.region
 }
