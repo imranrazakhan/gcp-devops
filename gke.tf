@@ -1,8 +1,3 @@
-locals {
-  cluster_name  = "${local.env}-${local.project}-gke"
-  gke_num_nodes = 1
-}
-
 resource "google_container_cluster" "gke" {
   name     = local.cluster_name
   location = local.region
