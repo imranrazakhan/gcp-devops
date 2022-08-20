@@ -8,6 +8,6 @@ terraform {
 }
 
 provider "google" {
-  project = "test-gke-infra"
-  region  = local.region
+  project = var.project_id
+  region  = var.region
 }
