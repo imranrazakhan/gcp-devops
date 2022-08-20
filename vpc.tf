@@ -1,7 +1,3 @@
-locals {
-  vpc_name = "${local.env}-${local.project}-vpc"
-}
-
 resource "google_compute_network" "vpc" {
   name                    = local.vpc_name
   auto_create_subnetworks = "false"
