@@ -1,9 +1,3 @@
-locals {
-  env              = "qa"
-  project          = "test-gke-infra"
-  region           = "europe-west1"
-}
-
 terraform {
   required_providers {
     google = {
