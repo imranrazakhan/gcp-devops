@@ -37,8 +37,3 @@ output "kubeconfig_raw" {
   value = module.gke_auth.kubeconfig_raw
   sensitive = true 
 }
-
-output "service_account" {
-  description = "The default service account used for running nodes."
-  value       = module.gke.service_account
-}
