@@ -15,17 +15,7 @@ output "zones" {
 
 output "cluster_name" {
   description = "Cluster name"
-  value       = module.gke.name
-}
-
-output "kubernetes_endpoint" {
-  sensitive = true
-  value     = module.gke_auth.host
-}
-
-output "client_token" {
-  sensitive = true
-  value     = module.gke_auth.token
+  value       = var.cluster_name
 }
 
 output "ca_certificate" {
