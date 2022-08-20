@@ -34,15 +34,3 @@ resource "google_container_node_pool" "gke-nodes" {
     }
   }
 }
-
-output "gke_endpoint" {
-  value = google_container_cluster.gke.endpoint
-}
-
-output "gke_master_version" {
-  value = google_container_cluster.gke.master_version
-}
-
-output "gke-node-urls" {
-  value = google_container_node_pool.gke-nodes.instance_group_urls
-}
